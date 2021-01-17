@@ -1,0 +1,19 @@
+# Application Properties
+spring:
+  application:
+    name: Liquibase Demo
+  # Jpa Properties
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/liquibasedemo
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
+## Server Properties
+server:
+  port: 8081
